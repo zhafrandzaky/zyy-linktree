@@ -1,32 +1,5 @@
-import * as React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { Coffee, ExternalLink } from 'lucide-react';
 import { SupportedIcon } from '@/types';
-
-function SaweriaIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path
-        d="M3.5 9.5h17c-.7 5.5-4.2 9.5-8.5 9.5s-7.8-4-8.5-9.5z"
-        fill="currentColor"
-        fillOpacity="0.12"
-      />
-      <path d="M3.5 9.5h17c-.7 5.5-4.2 9.5-8.5 9.5s-7.8-4-8.5-9.5z" />
-      <circle cx="9" cy="13.5" r="0.8" fill="currentColor" />
-      <circle cx="15" cy="13.5" r="0.8" fill="currentColor" />
-      <path d="M10.5 15.8a2 2 0 0 0 3 0" />
-      <path d="M12 3v3.5" />
-      <circle cx="12" cy="4" r="1.5" fill="currentColor" />
-    </svg>
-  );
-}
 
 function SociabuzzIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -85,8 +58,9 @@ function GithubIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-const iconMap: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
-  saweria: SaweriaIcon,
+const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
+  saweria: Coffee,
+  coffee: Coffee,
   sociabuzz: SociabuzzIcon,
   instagram: InstagramIcon,
   discord: DiscordIcon,

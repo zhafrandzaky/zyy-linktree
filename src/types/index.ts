@@ -4,6 +4,7 @@
 
 export type SupportedIcon =
   | 'Saweria'
+  | 'Coffee'
   | 'Sociabuzz'
   | 'Instagram'
   | 'Discord'

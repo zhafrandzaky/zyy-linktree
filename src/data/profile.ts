@@ -8,7 +8,7 @@ export const profileData: ProfileData = {
     {
       title: 'Saweria',
       url: 'https://saweria.co/ziona',
-      icon: 'Saweria',
+      icon: 'Coffee',
     },
     {
       title: 'Sociabuzz',
