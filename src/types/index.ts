@@ -8,6 +8,8 @@ export type SupportedIcon =
   | 'Sociabuzz'
   | 'Coins'
   | 'Coin'
+  | 'TikTok'
+  | 'Tiktok'
   | 'Instagram'
   | 'Discord'
   | 'Github';

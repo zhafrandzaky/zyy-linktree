@@ -16,6 +16,11 @@ export const profileData: ProfileData = {
       icon: 'Coins',
     },
     {
+      title: 'TikTok',
+      url: 'https://tiktok.com/@truegod4k',
+      icon: 'TikTok',
+    },
+    {
       title: 'Instagram',
       url: 'https://instagram.com/ziona_zyy',
       icon: 'Instagram',
