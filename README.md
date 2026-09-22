@@ -4,23 +4,23 @@ A production-grade, minimalist personal link-in-bio (Linktree alternative) web a
 
 Designed with **Linear / Raycast / Vercel** level craftsmanship—featuring deliberate whitespace, subtle micro-interactions, cohesive typography, and responsive ergonomics across all screen sizes.
 
-🌐 **Production URL**: [https://zyy.my.id](https://zyy.my.id)
+**Production URL**: [https://zyy.my.id](https://zyy.my.id)
 
 ---
 
-## ✨ Features
+## Features
 
-- ⚡️ **Light-Mode-First Theming**: Seamless dark/light theme switcher powered by `next-themes` with zero hydration flash (`useSyncExternalStore`).
-- 🎨 **Craft-Driven Aesthetics**: Subtle borders, micro-interactions (`active:scale-[0.98]`), directional arrow transitions, and no AI-cliché gradients or harsh shadows.
-- 📱 **Ergonomic Responsive Layout**: Strictly bounded container (`max-w-[480px]`) that stays centered on wide desktop screens while keeping cards comfortably in the mobile thumb zone (`pt-7 pb-8`).
-- 🔗 **Fully Decoupled Data**: All profile details and links reside exclusively in `src/data/profile.ts` backed by strict TypeScript definitions.
-- 🇮🇩 **Creator Platform Vectors**: Custom inline monochrome SVG icons for local creator monetization platforms (**Saweria** & **Sociabuzz**) and community hubs (**Discord**, **Instagram**, **GitHub**).
-- 🪄 **Adaptive Vector Favicon**: 100% transparent SVG favicon (`src/app/icon.svg`) that automatically switches between dark zinc (light mode) and pure white (dark mode) matching the browser's system theme.
-- 🚀 **Zero-Config Vercel Deployment**: Static generation with Turbopack, pre-configured OpenGraph cards, Twitter preview metadata, and custom domain readiness.
+- **Light-Mode-First Theming**: Seamless dark/light theme switcher powered by `next-themes` with zero hydration flash (`useSyncExternalStore`).
+- **Craft-Driven Aesthetics**: Subtle borders, micro-interactions (`active:scale-[0.98]`), directional arrow transitions, and no AI-cliché gradients or harsh shadows.
+- **Ergonomic Responsive Layout**: Strictly bounded container (`max-w-[480px]`) that stays centered on wide desktop screens while keeping cards comfortably in the mobile thumb zone (`pt-7 pb-8`).
+- **Fully Decoupled Data**: All profile details and links reside exclusively in `src/data/profile.ts` backed by strict TypeScript definitions.
+- **Creator Platform Vectors**: Custom inline monochrome SVG icons for local creator monetization platforms (**Saweria** & **Sociabuzz**) and community hubs (**Discord**, **Instagram**, **GitHub**).
+- **Adaptive Vector Favicon**: 100% transparent SVG favicon (`src/app/icon.svg`) that automatically switches between dark zinc (light mode) and pure white (dark mode) matching the browser's system theme.
+- **Zero-Config Vercel Deployment**: Static generation with Turbopack, pre-configured OpenGraph cards, Twitter preview metadata, and custom domain readiness.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Runtime & Package Manager**: [Bun](https://bun.sh/) (v1.4+)
 - **Framework**: [Next.js 16](https://nextjs.org/) (App Router, Turbopack)
@@ -31,7 +31,7 @@ Designed with **Linear / Raycast / Vercel** level craftsmanship—featuring deli
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 zyy-linktree/
@@ -65,7 +65,7 @@ zyy-linktree/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone & Install
 
@@ -100,7 +100,7 @@ bun run start
 
 ---
 
-## ⚙️ Customization
+## Customization
 
 ### Modifying Profile & Links
 All content is centralized in [`src/data/profile.ts`](src/data/profile.ts):
@@ -129,7 +129,7 @@ export const profileData: ProfileData = {
 
 ---
 
-## 🌐 Deploy to Vercel
+## Deploy to Vercel
 
 1. Push your repository to GitHub.
 2. Import the repository into [Vercel](https://vercel.com/new).
@@ -139,7 +139,7 @@ export const profileData: ProfileData = {
 
 ---
 
-## 📄 Documentation
+## Documentation
 
 For in-depth design principles and agent operating rules, explore:
 - [docs/design.md](docs/design.md) - Design System & UI/UX Specifications.
@@ -148,6 +148,6 @@ For in-depth design principles and agent operating rules, explore:
 
 ---
 
-## 📝 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
