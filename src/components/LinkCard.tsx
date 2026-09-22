@@ -19,7 +19,7 @@ export function LinkCard({ link }: LinkCardProps) {
     >
       <div className="flex items-center gap-3.5 min-w-0 pr-2">
         {/* Left Icon Badge */}
-        <div className="flex items-center justify-center w-9 h-9 rounded-lg shrink-0 border transition-colors duration-200 bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-300 border-zinc-200/60 dark:border-zinc-800 group-hover:bg-zinc-200/90 dark:group-hover:bg-zinc-700 group-hover:text-zinc-900 dark:group-hover:text-zinc-100 group-hover:border-zinc-300 dark:group-hover:border-zinc-600">
+        <div className="flex items-center justify-center w-9 h-9 rounded-lg shrink-0 border transition-colors duration-200 bg-zinc-100/80 dark:bg-zinc-800/60 border-zinc-200/60 dark:border-zinc-800 group-hover:bg-zinc-200/90 dark:group-hover:bg-zinc-700 group-hover:border-zinc-300 dark:group-hover:border-zinc-600">
           <IconResolver name={icon} className="w-4 h-4" />
         </div>
 

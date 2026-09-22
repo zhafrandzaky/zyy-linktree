@@ -51,6 +51,17 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   github: GithubIcon,
 };
 
+const iconColorMap: Record<string, string> = {
+  saweria: 'text-amber-500 dark:text-amber-400',
+  coffee: 'text-amber-500 dark:text-amber-400',
+  sociabuzz: 'text-emerald-500 dark:text-emerald-400',
+  coins: 'text-emerald-500 dark:text-emerald-400',
+  coin: 'text-emerald-500 dark:text-emerald-400',
+  instagram: 'text-pink-500 dark:text-pink-400',
+  discord: 'text-[#5865F2] dark:text-[#7289da]',
+  github: 'text-zinc-900 dark:text-zinc-100',
+};
+
 interface IconResolverProps {
   name?: SupportedIcon;
   className?: string;
@@ -58,11 +69,12 @@ interface IconResolverProps {
 
 export function IconResolver({ name, className = 'w-4 h-4' }: IconResolverProps) {
   if (!name) {
-    return <ExternalLink className={className} aria-hidden="true" />;
+    return <ExternalLink className={`${className} text-zinc-500 dark:text-zinc-400`} aria-hidden="true" />;
   }
 
   const normalizedKey = name.toLowerCase();
   const IconComponent = iconMap[normalizedKey] || ExternalLink;
+  const colorClass = iconColorMap[normalizedKey] || 'text-zinc-600 dark:text-zinc-300';
 
-  return <IconComponent className={className} aria-hidden="true" />;
+  return <IconComponent className={`${className} ${colorClass}`} aria-hidden="true" />;
 }
