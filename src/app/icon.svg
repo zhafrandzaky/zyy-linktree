@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="none">
+  <style>
+    path {
+      fill: #18181b;
+    }
+    @media (prefers-color-scheme: dark) {
+      path {
+        fill: #fafafa;
+      }
+    }
+  </style>
+  <!-- Primary Sparkle Star -->
+  <path d="M12 2C12 7.523 16.477 12 22 12C16.477 12 12 16.477 12 22C12 16.477 7.523 12 2 12C7.523 12 12 7.523 12 2Z" />
+  <!-- Secondary Accent Sparkle -->
+  <path d="M19 3C19 4.657 20.343 6 22 6C20.343 6 19 7.343 19 9C19 7.343 17.657 6 16 6C17.657 6 19 4.657 19 3Z" opacity="0.8" />
+</svg>
