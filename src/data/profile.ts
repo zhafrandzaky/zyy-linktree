@@ -13,7 +13,7 @@ export const profileData: ProfileData = {
     {
       title: 'Sociabuzz',
       url: 'https://sociabuzz.com/zyytruegod',
-      icon: 'Sociabuzz',
+      icon: 'Coins',
     },
     {
       title: 'Instagram',

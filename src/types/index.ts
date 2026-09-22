@@ -6,6 +6,8 @@ export type SupportedIcon =
   | 'Saweria'
   | 'Coffee'
   | 'Sociabuzz'
+  | 'Coins'
+  | 'Coin'
   | 'Instagram'
   | 'Discord'
   | 'Github';
