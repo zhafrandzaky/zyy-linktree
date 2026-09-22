@@ -76,7 +76,7 @@ zyy-linktree/
 ### C. Layout & Spacing Guardrails
 - **Container Boundary**: Strictly keep content inside `max-w-[480px] w-full mx-auto`. Never allow cards to stretch across wide viewports.
 - **Mobile Spacing**: Use `pt-7 pb-8 px-4 sm:pt-12 sm:pb-10 sm:px-6` with `justify-start`. Do NOT apply `mt-auto` or `my-auto` without verifying mobile viewports, as they create excessive vertical gaps on tall mobile screens.
-- **Theme Toggle Alignment**: Stays flush with the top edge of the avatar circle (`absolute right-0 top-0`).
+- **Theme Toggle Alignment**: Positioned above the avatar in a sticky top-right container (`sticky top-4 z-50 w-full flex justify-end mb-2 sm:mb-3 pointer-events-none`).
 
 ### D. Adaptive Vector Favicon
 - `src/app/icon.svg` is 100% transparent (`fill="none"`).

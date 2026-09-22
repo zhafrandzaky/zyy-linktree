@@ -7,23 +7,23 @@ export default function Home() {
   return (
     <main className="min-h-dvh w-full flex flex-col items-center justify-start pt-7 pb-8 px-4 sm:pt-12 sm:pb-10 sm:px-6">
       <div className="w-full max-w-[480px] mx-auto flex flex-col items-center">
-        {/* Profile Avatar & Top-Aligned Theme Toggle */}
-        <div className="relative w-full flex justify-center items-start">
-          <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden ring-2 ring-zinc-300/90 dark:ring-zinc-700/80 shadow-sm">
-            <Image
-              src={profileData.avatarSrc}
-              alt={profileData.name}
-              width={96}
-              height={96}
-              priority
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Theme toggle aligned with the top edge of the profile avatar */}
-          <div className="absolute right-0 top-0">
+        {/* Top Sticky Header with Theme Toggle above Profile Avatar */}
+        <div className="sticky top-4 z-50 w-full flex justify-end mb-2 sm:mb-3 pointer-events-none">
+          <div className="pointer-events-auto">
             <ThemeToggle />
           </div>
+        </div>
+
+        {/* Profile Avatar */}
+        <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden ring-2 ring-zinc-300/90 dark:ring-zinc-700/80 shadow-sm">
+          <Image
+            src={profileData.avatarSrc}
+            alt={profileData.name}
+            width={96}
+            height={96}
+            priority
+            className="w-full h-full object-cover"
+          />
         </div>
 
         {/* Profile Identity (Name & Handle only) */}
