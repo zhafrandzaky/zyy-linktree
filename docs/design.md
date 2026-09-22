@@ -16,7 +16,7 @@ The application is built with a **production-grade, craft-first aesthetic** insp
 
 ## 2. Color Tokens & Theme System
 
-The application is built with a **light-mode-first** approach managed via `next-themes` and **Tailwind CSS v4**.
+The application is built with a **dark-mode-first** approach managed via `next-themes` and **Tailwind CSS v4**.
 
 | Token | Light Mode | Dark Mode | Usage |
 | :--- | :--- | :--- | :--- |

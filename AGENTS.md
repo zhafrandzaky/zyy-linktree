@@ -22,7 +22,7 @@ A production-grade, minimalist personal link-in-bio (Linktree alternative) web a
 - **Package Manager & Runtime**: `bun` (v1.4+)
 - **Framework**: `Next.js 16` (App Router, Turbopack)
 - **Styling**: `Tailwind CSS v4` (`@tailwindcss/postcss`)
-- **Theme Engine**: `next-themes` (light mode by default, class-based toggle)
+- **Theme Engine**: `next-themes` (dark mode by default / dark mode first, class-based toggle)
 - **Icons**: `lucide-react` + custom inline monochrome SVG vectors
 - **TypeScript**: Version 5.9+ (strict mode enabled)
 
@@ -69,7 +69,7 @@ zyy-linktree/
 - When adding a new link, update `src/types/index.ts` (`SupportedIcon`), `src/components/IconResolver.tsx`, and `src/data/profile.ts`.
 
 ### B. Theming & Hydration
-- `next-themes` operates with `attribute="class"`, `defaultTheme="light"`, and `enableSystem={false}`.
+- `next-themes` operates with `attribute="class"`, `defaultTheme="dark"`, and `enableSystem={false}`.
 - Tailwind CSS v4 class-based dark mode requires `@custom-variant dark (&:where(.dark, .dark *));` in `src/app/globals.css`.
 - In `ThemeToggle.tsx`, do NOT use `useEffect` with synchronous `setState` for mounting (it triggers React 19 cascading render ESLint errors). Use `React.useSyncExternalStore`.
 

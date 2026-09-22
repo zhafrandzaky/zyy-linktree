@@ -71,7 +71,7 @@ export default function RootLayout({
       <body className="min-h-dvh antialiased selection:bg-zinc-200 dark:selection:bg-zinc-800">
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem={false}
           disableTransitionOnChange={false}
         >

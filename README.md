@@ -10,7 +10,7 @@ Designed with **Linear / Raycast / Vercel** level craftsmanship—featuring deli
 
 ## Features
 
-- **Light-Mode-First Theming**: Seamless dark/light theme switcher powered by `next-themes` with zero hydration flash (`useSyncExternalStore`).
+- **Dark-Mode-First Theming**: Seamless dark/light theme switcher powered by `next-themes` with zero hydration flash (`useSyncExternalStore`).
 - **Craft-Driven Aesthetics**: Subtle borders, micro-interactions (`active:scale-[0.98]`), directional arrow transitions, and no AI-cliché gradients or harsh shadows.
 - **Ergonomic Responsive Layout**: Strictly bounded container (`max-w-[480px]`) that stays centered on wide desktop screens while keeping cards comfortably in the mobile thumb zone (`pt-7 pb-8`).
 - **Fully Decoupled Data**: All profile details and links reside exclusively in `src/data/profile.ts` backed by strict TypeScript definitions.
