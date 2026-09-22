@@ -9,7 +9,6 @@ export const profileData: ProfileData = {
       title: 'Saweria',
       url: 'https://saweria.co/ziona',
       icon: 'Saweria',
-      highlighted: true,
     },
     {
       title: 'Sociabuzz',

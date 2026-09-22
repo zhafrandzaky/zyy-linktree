@@ -64,7 +64,7 @@ Utilizes the **Geist Sans** variable font for high-legibility geometric letterfo
 - **Layout**: Flex row with space-between:
   1. Left icon badge: `w-9 h-9` rounded-lg container with subtle border and monochrome vector.
   2. Title: Bold platform label with `truncate` protection.
-  3. Action indicator: `ArrowUpRight` (16px) with hover translation (`group-hover:translate-x-0.5 group-hover:-translate-y-0.5`).
+  3. Action indicator: `ArrowUpRight` (16px) static indicator.
 - **Featured State**: Subtle accent border (`border-zinc-300 dark:border-zinc-700`) and slight elevation for primary call-to-actions (e.g. Saweria).
 
 ---
