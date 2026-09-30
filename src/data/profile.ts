@@ -27,7 +27,7 @@ export const profileData: ProfileData = {
     },
     {
       title: 'Discord',
-      url: 'https://discord.gg/xYtCGE2YCb',
+      url: 'https://discord.gg/2AY2EFdRHX',
       icon: 'Discord',
     },
     {
