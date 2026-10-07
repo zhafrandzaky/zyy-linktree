@@ -43,12 +43,15 @@ zyy-linktree/
 │   │   ├── layout.tsx           # SEO metadata, OpenGraph, Twitter cards & ThemeProvider
 │   │   └── page.tsx             # Main bounded page (max-w-[480px]) with top-aligned toggle
 │   ├── components/
+│   │   ├── BackgroundPaths.tsx  # Dynamic GPU-accelerated canvas background paths with theme adaptation
 │   │   ├── IconResolver.tsx     # Custom monochrome SVGs (Saweria, Sociabuzz, Discord, IG, GitHub)
 │   │   ├── LinkCard.tsx         # Accessible, touch-ergonomic link card (48px min-height)
 │   │   ├── ThemeProvider.tsx    # Client wrapper for next-themes
 │   │   └── ThemeToggle.tsx      # Smooth Sun/Moon theme switcher (useSyncExternalStore hydration guard)
 │   ├── data/
 │   │   └── profile.ts           # Decoupled profile and links configuration
+│   ├── lib/
+│   │   └── utils.ts             # Standard Tailwind class merging utility
 │   └── types/
 │       └── index.ts             # Strict TypeScript definitions
 ├── AGENTS.md                    # Agent context and operating rules

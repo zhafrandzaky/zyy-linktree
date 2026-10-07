@@ -15,7 +15,7 @@ export function LinkCard({ link }: LinkCardProps) {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex items-center justify-between w-full min-h-[48px] py-3 px-4 rounded-xl border transition-all duration-200 ease-out active:scale-[0.98] focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-zinc-400 dark:focus-visible:ring-zinc-600 border-zinc-200/90 bg-white hover:border-zinc-400 hover:bg-zinc-100/80 dark:border-zinc-800/80 dark:bg-zinc-900/40 dark:hover:border-zinc-600 dark:hover:bg-zinc-800/90 shadow-2xs"
+      className="group relative flex items-center justify-between w-full min-h-[48px] py-3 px-4 rounded-xl border transition-all duration-200 ease-out active:scale-[0.98] focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-zinc-400 dark:focus-visible:ring-zinc-600 border-zinc-200/90 bg-white/80 hover:border-zinc-400 hover:bg-zinc-100/90 dark:border-zinc-800/80 dark:bg-zinc-900/40 dark:hover:border-zinc-600 dark:hover:bg-zinc-800/90 shadow-2xs backdrop-blur-xs"
     >
       <div className="flex items-center gap-3.5 min-w-0 pr-2">
         {/* Left Icon Badge */}

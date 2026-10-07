@@ -87,3 +87,15 @@ Utilizes the **Geist Sans** variable font for high-legibility geometric letterfo
   - **Light browser theme**: Sparkle star renders in dark zinc (`#18181b`).
   - **Dark browser theme**: Sparkle star renders in crisp paper-white (`#fafafa`).
 - Replaces static raster bitmaps for zero-blur rendering on high-DPI and Retina displays.
+
+---
+
+## 7. Dynamic Ambient Background Paths (`src/components/BackgroundPaths.tsx`)
+
+- **Rendering Engine**: Hardware-accelerated HTML5 Canvas with native `Path2D` caching for 72 Bezier curves.
+- **Physics & Motion**: Sinusoidal oscillation with cubic Bezier arc-length integration, giving a slow, calming breathing effect.
+- **Theme Adaptation**: Dynamically samples active theme classes (`.dark` / light) per animation frame:
+  - **Dark mode**: Atmospheric slate strokes (`rgba(215, 225, 240, opacity)`) with subtle amber/slate ambient radial glow.
+  - **Light mode**: Crisp soft zinc strokes (`rgba(39, 39, 42, opacity)`) with soft warm ambient radial glow.
+- **Performance Guards**: Auto-pauses canvas render loop when scrolled off-screen (`IntersectionObserver`) or when tab is hidden (`document.visibilitychange`).
+

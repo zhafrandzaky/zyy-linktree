@@ -2,10 +2,11 @@ import Image from 'next/image';
 import { profileData } from '@/data/profile';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { LinkCard } from '@/components/LinkCard';
+import { BackgroundPaths } from '@/components/BackgroundPaths';
 
 export default function Home() {
   return (
-    <main className="min-h-dvh w-full flex flex-col items-center justify-start pt-7 pb-8 px-4 sm:pt-12 sm:pb-10 sm:px-6">
+    <BackgroundPaths as="main" className="pt-7 pb-8 px-4 sm:pt-12 sm:pb-10 sm:px-6">
       <div className="w-full max-w-[480px] mx-auto flex flex-col items-center">
         {/* Top Sticky Header with Theme Toggle above Profile Avatar */}
         <div className="sticky top-4 z-50 w-full flex justify-end mb-2 sm:mb-3 pointer-events-none">
@@ -53,6 +54,6 @@ export default function Home() {
           </p>
         </footer>
       </div>
-    </main>
+    </BackgroundPaths>
   );
 }
